@@ -15,5 +15,5 @@
 	$conn->exec($sql_insertar);
 	
 	//PASO 4: Redireccionar el usuario a página de gracias
-	header("location:gracias.php");
+	header("location:listar.php");
 ?>

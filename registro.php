@@ -32,6 +32,7 @@
 			</div>
 			<div class="form-group">
 				<button class="btn btn-success">Guardar</button>
+				<a class="btn btn-danger" href="listar.php">Cancelar</a>
 			</div>
 		</form>
 	</div>
