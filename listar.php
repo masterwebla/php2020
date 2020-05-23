@@ -32,14 +32,17 @@
 				</tr>
 			</thead>
 			<tbody>
-				<?php while($usuario = $resultado->fetch(PDO::FETCH_ASSOC)){ ?>
+				<?php 
+					//while($usuario = $resultado->fetch(PDO::FETCH_ASSOC)){
+					foreach($resultado as $usuario){
+				?>
 					<tr>
 						<td><?php echo $usuario['nombres']; ?></td>
 						<td><?php echo $usuario['email']; ?></td>
 						<td><?php echo $usuario['fecha']; ?></td>
 						<td><?php echo $usuario['ciudad']; ?></td>
 						<td>
-							<a class="btn btn-info" href="#">Editar</a>
+							<a class="btn btn-info" href="editar.php?id=<?php echo $usuario['id']; ?>">Editar</a>
 							<a class="btn btn-danger" href="#">Borrar</a>
 						</td>
 					</tr>
