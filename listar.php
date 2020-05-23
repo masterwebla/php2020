@@ -43,7 +43,7 @@
 						<td><?php echo $usuario['ciudad']; ?></td>
 						<td>
 							<a class="btn btn-info" href="editar.php?id=<?php echo $usuario['id']; ?>">Editar</a>
-							<a class="btn btn-danger" href="#">Borrar</a>
+							<a class="btn btn-danger" href="borrar.php?id=<?php echo $usuario['id']; ?>">Borrar</a>
 						</td>
 					</tr>
 				<?php } ?>
